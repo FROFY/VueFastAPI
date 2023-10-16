@@ -19,16 +19,11 @@ const router = createRouter({
     routes: [{
         path: '/',
         component: App
-    },
-    {
-        path: '/search',
-        component: Search
     }],
     history: createWebHistory()
 })
 
 const app = createApp(App)
-// app.use(router)
 
 registerPlugins(app)
 

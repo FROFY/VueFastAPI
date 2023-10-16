@@ -12,20 +12,27 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn @click="$router.push('/record')" icon>
         <v-icon size="x-large">mdi-record-rec</v-icon>
       </v-btn>
 
-      <v-btn icon>
+      <v-btn @click="$router.push('/search')" icon>
         <v-icon size="x-large">mdi-card-search</v-icon>
       </v-btn>
 
-      <v-btn icon>
+      <v-btn @click="$router.push('/')" icon>
         <v-icon size="x-large">mdi-exit-to-app</v-icon>
       </v-btn>
     </v-toolbar>
   </v-card>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
 </script>
+
+<style>
+.xuy {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
